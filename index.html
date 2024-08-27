@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .dark-mode {
+      background-color: #282828;
+      color: white;
+    }
+
+    .button {
+      background-color: rgb(19, 13, 13);
+      color: white;
+      padding: 8px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 8px 2px;
+      cursor: pointer;
+      border-radius: 15px;
+      border: 2px solid white;
+    }
+
+
+    div {
+      width:00xp;
+      margin: auto;
+      background-color: darkgrey;
+   
+    }
+
+    .box1
+    {
+      text-align: center;
+      height: 250px; 
+      margin-bottom: 60px;
+      border-radius: 50px;
+      border: 2px solid lightcoral;
+      color: black;
+    }
+   .box2{
+    text-align: right;
+   }   
+
+    .button1 {
+      background-color: rgb(19, 13, 13);
+      color: white;
+      padding: 10px 20px;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 10px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 2px solid white;
+    }
+
+   
+
+
+
+  </style>
+<body>
+  <div class="box1">
+    <h1>Maciek Szymonek</h1>
+        <div class="box2">
+          <button id="modeButton" onclick="toggleMode()" class="button">Dark Mode</button>
+        </div>
+      <p>">Hej, jag heter Maciek, jag är 20 år och just nu studerar jag på NTI-skolan på T4.</p>
+    <div class="button1" onclick="goToPage()">Github</button></div>
+  </div>
+
+  <div class="box1">
+    <h3>Någonting</h3>
+  </div>
+
+  <div class="box1">
+    <h3>Någonting</h3>
+  </div>
+
+  <div class="box1">
+    <h3>Någonting</h3>
+  </div>
+
+  <script>
+    function toggleMode() {
+      var element = document.body;
+      var button = document.getElementById("modeButton");
+      
+      element.classList.toggle("dark-mode");
+      
+      if (element.classList.contains("dark-mode")) {
+        button.textContent = "Light Mode";
+      } else {
+        button.textContent = "Dark Mode";
+      }
+      function goToPage() {
+      window.location.href = "https://github.com/MaciejSzymonek";
+    }
+    }
+  </script>
+  </body>
+</html>
 
